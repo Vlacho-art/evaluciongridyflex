@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #333;
+  line-height: 1.5;
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  background: #bcd3f7;
+  color: #222;
+  padding: 0;
+  justify-content: flex-start;
+  height: 70px;
+  border-bottom: 4px solid #fff;
+  position: relative;
+  border-radius: 8px;
+}
+
+header .logo {
+  width: 120px;
+  height: 70px;
+  background: #bcd3f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+  margin-left: 0;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+header h1 {
+  flex: 1;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #222;
+  list-style: none;
+  padding: 10px 0;
+  border-radius: 8px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+nav ul li a:hover {
+  background: #ff6600;
+  cursor: pointer;
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0;
+  padding: 0;
+  background: #bcd3f7;
+  min-height: 140px;
+
+}
+
+.banner .info {
+  background: #ffcc99;
+  padding: 30px 20px;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 140px;
+  border-radius: 8px;
+}
+
+.banner .info p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.banner .info input {
+  background: #ff6600;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.banner .info input:hover {
+  background: #e65c00;
+}
+
+.cursos {
+  background: #bcd3f7;
+  padding: 20px 0 0 0;
+  border-radius: 0;
+  text-align: center;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 8px;
+}
+
+.cursos .logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.cursos h3 {
+  margin-bottom: 10px;
+  color: #222;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.cursos img {
+  width: 140px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin: 0 10px;
+  border: 4px solid transparent;
+  transition: border 0.3s, transform 0.3s;
+}
+
+.cursos img:hover {
+  transform: scale(1.05);
+  border-color: #ff6600;
+}
+
+.profesores {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: stretch;
+  justify-content: center;
+  background: #fff;
+  box-shadow: none;
+  min-height: 160px;
+  border-bottom: 2px solid #bcd3f7;
+  border-radius: 8px;
+}
+
+.profesores h3 {
+  grid-column: 1 / 2;
+  background: #fff;
+  color: #222;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+
+.profesores img {
+  grid-column: 1 / 2;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 10px auto;
+  display: block;
+  object-fit: cover;
+}
+
+.profesores .info {
+  grid-column: 2 / 4;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 10px 20px;
+}
+
+.profesores .info > div {
+  background: #eafbe2;
+  border: 1px solid #bcd3f7;
+  border-radius: 4px;
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  min-height: 100px;
+  font-size: 1rem;
+  color: #222;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.curso {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px 0;
+  background: #fff;
+  border-bottom: 2px solid #bcd3f7;
+}
+
+.curso h3 {
+  grid-column: 1 / 4;
+  text-align: center;
+  color: #222;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.curso article {
+  background: #f7f7f7;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.curso article:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.curso .etiqueta {
+  background: #2196f3;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #888b92;
+  color: #fff;
+  padding: 30px 40px;
+  gap: 40px;
+}
+
+footer h3 {
+  margin-bottom: 10px;
+  color: #ffcc80;
+  font-size: 1.1rem;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  margin-bottom: 6px;
+}
+
+footer ul li a {
+  color: #ffcc80;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .banner {
+    grid-template-columns: 1fr;
+  }
+  .cursos img {
+    width: 100px;
+    height: 70px;
+  }
+  .profesores {
+    grid-template-columns: 1fr 1fr;
+  }
+  .profesores .info {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .curso {
+    grid-template-columns: 1fr;
+  }
+  .video-destacado,
+  .video-destacado iframe,
+  .video-destacado video {
+    width: 100% ;
+    height: auto;
+    max-width: 100vw;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 15px auto;
+  }
+  footer {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+    padding: 10px 0;
+  }
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+  nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+    text-align: center;
+  }
+  header .logo {
+    margin: 0 auto 10px auto;
+    width: 90px;
+    height: 50px;
+  }
+  header h1 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+}
